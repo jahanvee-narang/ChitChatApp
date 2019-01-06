@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary">
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/waves" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="May I ask your details?"
+        android:textSize="20sp"
+        android:padding="25sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorAccent" />
+
+
+    <EditText
+        android:id="@+id/displayname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter your display name"
+        android:inputType="text"
+        android:maxLength="15"
+        android:layout_marginRight="25sp"
+        android:layout_marginLeft="25sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/spinnerCountries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:text="+91"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15sp"
+                android:layout_weight="2"
+                android:digits="0123456789"
+                android:hint="enter your number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+       android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:text="Continue"
+        android:layout_margin="25sp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+
+
+</LinearLayout>
